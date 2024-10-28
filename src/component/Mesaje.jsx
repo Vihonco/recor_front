@@ -29,7 +29,7 @@ export default function Mensaje() {
         const fullNumber = `+57${localNumber.replace(/^\+57/, '')}`;
 
         try {
-            const response = await axios.post('http://localhost:3000/api/messages/send', {
+            const response = await axios.post('https://recordatorio-back.onrender.com/api/messages/send', {
                 to: fullNumber,
                 name,
                 appointmentType
